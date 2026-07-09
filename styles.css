@@ -1,0 +1,6 @@
+/* Site-wide custom styles. Quarto themes (cosmo/darkly) do most of the
+   work; add overrides here as needed. */
+
+.quarto-title-banner {
+  margin-bottom: 1.5em;
+}

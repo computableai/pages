@@ -1,0 +1,10 @@
+---
+title: "About"
+toc: false
+---
+
+Computable AI is a blog about machine learning, AI engineering, and the
+craft of making ideas computable.
+
+<!-- TODO: introduce yourself here — who you are, what you work on, and
+     what readers should expect from the blog. -->

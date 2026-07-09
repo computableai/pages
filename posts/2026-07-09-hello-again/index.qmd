@@ -1,0 +1,20 @@
+---
+title: "Hello Again"
+description: "Rebooting this blog on a modern stack, six years later."
+date: 2026-07-09
+categories: [meta]
+---
+
+This blog was set up in early 2020 and then — as blogs do — sat quietly
+while other things happened. It's now back, rebuilt on
+[Quarto](https://quarto.org), the successor to the
+[fastpages](https://github.com/fastai/fastpages) platform it originally
+ran on.
+
+The mechanics are simpler now: posts are Markdown files or Jupyter
+notebooks in a `posts/` directory, and pushing to the repository
+publishes them. No conversion scripts, no Docker, no deprecated
+tooling to babysit.
+
+More substantial posts are on the way. In the meantime, the code for
+this site lives on [GitHub](https://github.com/computableai/pages).
