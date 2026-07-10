@@ -1,0 +1,115 @@
+/*-- scss:defaults --*/
+
+// Dark-mode tokens lifted from the prefers-color-scheme block in
+// https://computable.ai/theme/css/main.css (green-tinted near-black)
+$brand-green: hsl(158, 94%, 31%); // #059962
+$brand-green-dark: #0d544e;
+
+$primary: $brand-green;
+$secondary: $brand-green-dark;
+
+$body-bg: hsl(158, 10%, 5%);
+$body-color: rgba(255, 255, 255, 0.7);
+$link-color: hsl(158, 70%, 45%);
+$link-hover-color: hsl(158, 70%, 55%);
+
+$font-family-sans-serif: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+$font-family-monospace: Consolas, "SFMono-Regular", Menlo, monospace;
+$headings-font-weight: 600;
+
+$navbar-bg: hsl(158, 10%, 7%);
+$navbar-fg: rgba(255, 255, 255, 0.7);
+$code-block-bg: hsl(158, 10%, 11%);
+
+$ca-surface: hsl(158, 10%, 7%);
+$ca-keyline: hsla(0, 0%, 100%, 6%);
+$ca-muted: rgba(255, 255, 255, 0.55);
+$ca-nonessential: rgba(255, 255, 255, 0.4);
+$ca-link: hsl(158, 70%, 45%);
+
+/*-- scss:rules --*/
+
+.navbar {
+  border-top: 4px solid $brand-green;
+  border-bottom: 1px solid $ca-keyline;
+
+  .navbar-title {
+    font-family: $headings-font-family;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $ca-link;
+  }
+
+  .navbar-title::after {
+    content: "A Machine Intelligence Blog";
+    font-family: $font-family-sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $ca-muted;
+    margin-left: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .navbar-logo {
+    max-height: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-title::after {
+    display: none;
+  }
+}
+
+div.quarto-post {
+  background: $ca-surface;
+  border: 1px solid $ca-keyline;
+  border-radius: 6px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+
+  .listing-title {
+    font-family: $headings-font-family;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    a {
+      color: $ca-link;
+      text-decoration: none;
+    }
+  }
+
+  .listing-description {
+    color: $body-color;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .metadata {
+    color: $ca-nonessential;
+    font-size: 0.85rem;
+  }
+}
+
+.quarto-listing-category-title {
+  color: $ca-nonessential;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.quarto-listing-category .category {
+  color: $ca-muted;
+  padding-bottom: 0.4rem;
+
+  &:hover,
+  &.active {
+    color: $ca-link;
+  }
+}

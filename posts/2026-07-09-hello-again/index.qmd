@@ -1,20 +1,21 @@
 ---
 title: "Hello Again"
-description: "Rebooting this blog on a modern stack, six years later."
+description: "Computable AI is back after a long hiatus."
 date: 2026-07-09
-categories: [meta]
+categories: [Miscellany]
 ---
 
-This blog was set up in early 2020 and then — as blogs do — sat quietly
-while other things happened. It's now back, rebuilt on
-[Quarto](https://quarto.org), the successor to the
-[fastpages](https://github.com/fastai/fastpages) platform it originally
-ran on.
+The last post on this blog went up in December 2019. Then — as blogs
+do — it went quiet.
 
-The mechanics are simpler now: posts are Markdown files or Jupyter
-notebooks in a `posts/` directory, and pushing to the repository
-publishes them. No conversion scripts, no Docker, no deprecated
-tooling to babysit.
+We're back. The focus is the same as it was: machine intelligence,
+explained carefully enough to internalize, from reinforcement learning
+fundamentals to commentary on current research.
 
-More substantial posts are on the way. In the meantime, the code for
-this site lives on [GitHub](https://github.com/computableai/pages).
+One thing has changed under the hood: new posts are published with
+[Quarto](https://quarto.org), so articles can be written as plain
+Markdown or as Jupyter notebooks with their code and output rendered
+directly into the post.
+
+More soon. If you want to follow along, there's an
+[RSS feed](../../index.xml).

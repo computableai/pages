@@ -3,26 +3,32 @@ project:
 
 website:
   title: "Computable AI"
-  description: "Notes on machine learning, AI engineering, and computation."
+  description: "A Machine Intelligence Blog"
   site-url: https://computable.ai/pages/
   repo-url: https://github.com/computableai/pages
+  favicon: images/favicon.ico
   navbar:
+    logo: images/logo-disc.png
+    logo-alt: "Computable AI"
     right:
       - about.qmd
-      - icon: github
-        href: https://github.com/computableai/pages
-        aria-label: GitHub
       - icon: rss
         href: index.xml
         aria-label: RSS
+      - icon: twitter
+        href: https://twitter.com/computableai
+        aria-label: Twitter
+      - icon: github
+        href: https://github.com/computableai
+        aria-label: GitHub
   page-footer:
-    center: "© Computable AI · Built with [Quarto](https://quarto.org)"
+    center: "© 2019–2026 the Computable AI authors · Built with [Quarto](https://quarto.org)"
 
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
+      light: [cosmo, theme-light.scss]
+      dark: [cosmo, theme-dark.scss]
     css: styles.css
     toc: true
     code-copy: true

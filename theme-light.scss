@@ -1,0 +1,119 @@
+/*-- scss:defaults --*/
+
+// Design tokens lifted from https://computable.ai/theme/css/main.css
+$brand-green: hsl(158, 94%, 31%); // #059962
+$brand-green-dark: #0d544e;
+
+$primary: $brand-green;
+$secondary: $brand-green-dark;
+
+$body-bg: hsl(0, 0%, 98%);
+$body-color: rgba(0, 0, 0, 0.7);
+$link-color: $brand-green;
+$link-hover-color: $brand-green;
+
+$font-family-sans-serif: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+$font-family-monospace: Consolas, "SFMono-Regular", Menlo, monospace;
+$headings-font-weight: 600;
+
+$navbar-bg: hsl(0, 0%, 100%);
+$navbar-fg: rgba(0, 0, 0, 0.7);
+$code-block-bg: hsl(0, 0%, 94%);
+
+// Card surface used by the post listing
+$ca-surface: hsl(0, 0%, 100%);
+$ca-shadow: hsla(0, 0%, 0%, 4%);
+$ca-muted: rgba(0, 0, 0, 0.6);
+$ca-nonessential: rgba(0, 0, 0, 0.4);
+
+/*-- scss:rules --*/
+
+// Site header: green keyline across the top (as on computable.ai),
+// brand-green wordmark plus tagline
+.navbar {
+  border-top: 4px solid $brand-green;
+  box-shadow: 0 1px 3px $ca-shadow;
+
+  .navbar-title {
+    font-family: $headings-font-family;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $brand-green;
+  }
+
+  .navbar-title::after {
+    content: "A Machine Intelligence Blog";
+    font-family: $font-family-sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: $ca-muted;
+    margin-left: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .navbar-logo {
+    max-height: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-title::after {
+    display: none;
+  }
+}
+
+// Post listing as white cards on the off-white page background
+div.quarto-post {
+  background: $ca-surface;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px $ca-shadow;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+
+  .listing-title {
+    font-family: $headings-font-family;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+
+    a {
+      color: $brand-green;
+      text-decoration: none;
+    }
+  }
+
+  .listing-description {
+    color: $body-color;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .metadata {
+    color: $ca-nonessential;
+    font-size: 0.85rem;
+  }
+}
+
+// Sidebar category list, in the style of the original "CATEGORIES" block
+.quarto-listing-category-title {
+  color: $ca-nonessential;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.quarto-listing-category .category {
+  color: $ca-muted;
+  padding-bottom: 0.4rem;
+
+  &:hover,
+  &.active {
+    color: $brand-green;
+  }
+}

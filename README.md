@@ -32,6 +32,14 @@ locally, save it with outputs, and commit. CI never executes code
 reproduced at publish time. If you render executable `.qmd` posts
 locally, commit the generated `_freeze/` directory too.
 
+## Design
+
+The look and feel matches the main site at <https://computable.ai>
+(the Pelican/mg theme): `theme-light.scss` and `theme-dark.scss` carry
+the design tokens (brand green `hsl(158,94%,31%)`, fonts, light/dark
+palettes) lifted from its `theme/css/main.css`, and `images/` holds the
+disc logo and favicon from the live site.
+
 ## Previewing locally
 
 Install [Quarto](https://quarto.org/docs/get-started/), then:

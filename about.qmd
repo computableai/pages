@@ -3,8 +3,22 @@ title: "About"
 toc: false
 ---
 
-Computable AI is a blog about machine learning, AI engineering, and the
-craft of making ideas computable.
+Welcome to Computable AI, a machine intelligence blog from a handful of
+DRL practitioners, intended to crystalize, internalize, share, and
+explain.
 
-<!-- TODO: introduce yourself here — who you are, what you work on, and
-     what readers should expect from the blog. -->
+I found few beginner resources for DRL when I began, and since I have a
+passion for teaching, this seemed a likely area in which to make a dent.
+
+I also serve as the "Director of Applied Sciences" for a startup
+software company, and the AI team must occasionally indoctrinate new
+members. This provides us with a convenient target audience, as well as
+an expanding pool of co-authors.
+
+Finally, my own education in DRL is incomplete, so this will serve
+partly as a record of my own journey.
+
+I hope it helps you.
+
+<!-- Restored from the original computable.ai About page (2019).
+     Update as the blog's focus evolves. -->
