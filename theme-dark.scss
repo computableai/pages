@@ -104,6 +104,12 @@ div.quarto-post {
   font-weight: 600;
 }
 
+// Keep transparent diagrams/equations legible on the dark background,
+// as the original theme does
+#quarto-document-content img {
+  background-color: #ddd;
+}
+
 .quarto-listing-category .category {
   color: $ca-muted;
   padding-bottom: 0.4rem;

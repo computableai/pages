@@ -1,2 +1,31 @@
 /* Site-wide custom styles. The design tokens live in theme-light.scss
    and theme-dark.scss; add theme-independent overrides here. */
+
+/* Image positioning via URL fragment, e.g. ![](/static/images/x.png#right)
+   — same convention as the mg theme on computable.ai. */
+
+#quarto-document-content img {
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+#quarto-document-content img[src*="#right"] {
+  float: right;
+  clear: right;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+#quarto-document-content img[src*="#left"] {
+  float: left;
+  clear: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#quarto-document-content img[src*="#center"] {
+  display: block;
+  height: auto;
+  margin: 1rem auto;
+  float: none !important;
+}
